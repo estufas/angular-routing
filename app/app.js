@@ -13,7 +13,15 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   .when('/doughnuts/:id', {
     templateUrl: 'app/views/doughnutShow.html',
     controller: 'DoughnutShowCtrl'
-
+  })
+  .when('/projects', {
+    templateUrl: 'app/views/projects.html'
+  })
+   .when('/resume', {
+    templateUrl: 'app/views/resume.html'
+  })
+   .when('/contact', {
+   templateUrl: 'app/views/contact.html'
   })
   .otherwise({
     templateUrl: 'app/views/404.html'
